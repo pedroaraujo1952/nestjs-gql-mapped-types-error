@@ -1,0 +1,28 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type TestEntity {
+  id: Float!
+  name: String!
+  description: String!
+}
+
+type Query {
+  sayHello: String!
+}
+
+type Mutation {
+  createTest(data: CreateInput!): TestEntity!
+  updateTest(data: UpdateInput!): TestEntity!
+}
+
+input CreateInput {
+  name: String!
+  description: String!
+  omitUpdateProperty: String!
+}
+
+input UpdateInput {
+  id: Float!
+}
